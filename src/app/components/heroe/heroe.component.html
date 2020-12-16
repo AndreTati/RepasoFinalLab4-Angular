@@ -1,0 +1,19 @@
+<div class="container">
+    <table style="width: 800px;">
+        <tr>
+            <td style="text-align: center; border-bottom: green; width: 400px;"><span style="color: green">{{heroe.nombre}}</span></td>
+            <td><span style="color: red;">Poderes</span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="assets/img/{{heroe.img}}" alt=""></td>
+            <td>
+                <li style="margin-left: 20px;" *ngFor="let poder of heroe.poderes">{{poder}}</li>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><a href="/detalle/{{heroe.id}}"><button>VER MAS</button></a></td>
+            <td></td>
+        </tr>
+    </table>
+    <hr style="background-color: black; width: 1200px;">
+</div>
