@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="titulo">A TODO MOTOR AUTOS</h1>
+    <p class="parrafo">
+        Publicá sin registrarte y en un sólo paso. ¿Apurado por
+        vender? Recibí ofertas en Efectivo de concesionarios
+        registrados. ¡Súper!
+    </p>
+    <p class="destacado">
+        &nbsp;Destacados
+    </p>
+    <div class="row">
+        <div class="col-2" *ngFor="let auto of autosData" style="margin-top: 10px;">
+            <app-auto  [auto]="auto"></app-auto>
+        </div>
+    </div>
+</div>

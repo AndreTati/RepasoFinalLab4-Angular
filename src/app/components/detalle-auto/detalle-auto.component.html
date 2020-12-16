@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <img src="assets/img/{{auto.imagen}}" style="width: 200px; height: 200px;" alt=""><br><br>
+            <a href="/nuestros-autos">Volver</a>
+        </div>
+        <div class="col">
+            <div class="row">
+                <span><b>Marca:</b></span>
+                <span>{{auto.marca}}</span>
+            </div>
+            <div class="row">
+                <span><b>Modelo:</b></span>
+                <span>{{auto.modelo}}</span>
+            </div>
+            <div class="row">
+                <span><b>Año:</b></span>
+                <span>{{auto.anio}}</span>
+            </div>
+            <div class="row">
+                <span><b>Precio:</b></span>
+                <span *ngIf="auto.precio==='0'">Consultar</span>
+                <span *ngIf="auto.precio!=='0'">{{auto.precio}}</span>
+            </div>
+            <div class="row">
+                <span><b>Localidad:</b></span>
+                <span>{{auto.localidad}}</span>
+            </div>
+            <div class="row">
+                <span><b>Destacado:</b></span>
+                <span *ngIf="auto.destacado==='Y'">Si</span>
+                <span *ngIf="auto.destacado==='N'">No</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div>
+    <div class="card" style="width: 150px; height: 250px;">
+        <a href="/detalle/{{id}}"><img src="assets/img/{{auto.imagen}}" style="max-width: 150px;" class="card-img-top" alt="auto.marca"></a>
+        <div class="card-body">
+          <h6 class="card-title" style="font-weight: bold; text-align: center; font-size: 19px;">{{auto.marca}}</h6>
+          <p class="card-text" style="text-align: center;">
+              <span style="text-align: center;">{{auto.modelo}} {{auto.anio}}</span><br>
+              <span *ngIf="auto.precio==='0'" style="color: orange; text-align: center;">Consultar</span>
+              <span *ngIf="auto.precio!=='0'" style="color: orange; text-align: center;">$ {{auto.precio}}</span>
+          </p>
+          
+        </div>
+      </div>
+</div>

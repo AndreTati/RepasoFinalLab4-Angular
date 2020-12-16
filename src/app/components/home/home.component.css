@@ -1,0 +1,20 @@
+.titulo{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+}
+
+.parrafo{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.destacado{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: orange;
+    color: white;
+    width: 1100px;
+}
