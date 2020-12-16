@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <h2 *ngIf="titulo">Seleccione una región del combo de opciones disponible en el menú</h2>
+    <div class="container mt-5" id="grilla" *ngIf="grilla">
+        <div class="row">
+            <div class="col"><b>País</b></div>
+            <div class="col"><b>Capital</b></div>
+            <div class="col"><b>Subregión</b></div>
+            <div class="col"><b>Población</b></div>
+            <div class="col"><b>Superficie</b></div>
+            <div class="col"></div>
+        </div>
+        <div class="row" *ngFor="let pais of paises">
+            <div class="col">{{pais.name}}</div>
+            <div class="col">{{pais.capital}}</div>
+            <div class="col">{{pais.subregion}}</div>
+            <div class="col">{{pais.population}}</div>
+            <div class="col">{{pais.area}}</div>
+            <div class="col"><a href="/detalle/{{pais.alpha2Code}}">DETALLE</a></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4">
+            <span style="color: green; font-size: 28px;"><b>PAIS: </b></span>
+            <span style="color: blue; font-size: 28px;"><b>{{pais.name}}</b></span>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <span><b>Capital: </b></span>
+            <span>{{pais.capital}}</span>
+        </div>
+        <div class="col-4">
+            <span><b>Región: </b></span>
+            <span>{{pais.region}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <span><b>Subregión: </b></span>
+            <span>{{pais.subregion}}</span>
+        </div>
+        <div class="col-4">
+            <span><b>Población: </b></span>
+            <span>{{pais.population}} habitantes</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <span><b>Superficie: </b></span>
+            <span>{{pais.area}} km2</span>
+        </div>
+        <div class="col-4">
+            <span><b>Monedas: </b></span>
+            <span *ngFor="let moneda of pais.currencies">{{moneda.code}}-{{moneda.name}}-{{moneda.symbol}}</span><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-6">
+                    <span><b>Zonas Horarias:</b></span>
+                </div>
+                <div class="col">
+                    <li *ngFor="let zh of pais.timezones">{{zh}}</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <div class="row">
+                <div class="col">
+                    <span><b>Idiomas: </b></span>
+                </div>
+                <div class="col">
+                    <li *ngFor="let idioma of pais.languages">{{idioma.name}}</li>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>

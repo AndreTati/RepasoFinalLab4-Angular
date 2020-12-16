@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['home/null']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ordenados por diámetro</a>
+        </li>
+        <li class="nav-item dropdown">
+          <select class="custom-select" name="region" id="" (change)="buscar($event)">
+            <option value="" selected>--Seleccione una región</option>
+            <option value="eu">European Union</option>
+            <option value="efta">European Free Trade Association</option>
+            <option value="caricom">Caribbean Community</option>
+            <option value="pa">Pacific Alliance</option>
+            <option value="au">African Union</option>
+            <option value="usan">Union of Southeast Asian Nations</option>
+            <option value="eeu">Eurasian Economic Union</option>
+            <option value="al">Arab League</option>
+            <option value="asean">Association of Southeast Asian Nations</option>
+            <option value="cais">Central American Integration System</option>
+            <option value="cefta">Central European Free Trade Agreement</option>
+            <option value="nafta">North American Free Trade Agreement</option>
+            <option value="saarc">South Asian Association for Regional Cooperation</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </nav>

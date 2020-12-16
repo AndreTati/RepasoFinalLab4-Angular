@@ -1,0 +1,11 @@
+div .col{
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#grilla{
+    border: 1px solid black;
+}
