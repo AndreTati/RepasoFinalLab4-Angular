@@ -1,0 +1,18 @@
+<div class="container">
+    <table>
+        <tr>
+            <td><span><b>Alumno</b></span></td>
+            <td><span><b>Legajo</b></span></td>
+            <td><span><b>Fecha Nacimiento</b></span></td>
+            <td><span><b>Promedio Notas</b></span></td>
+            <td></td>
+        </tr>
+        <tr *ngFor="let alumno of alumnosJson">
+            <td><span>{{alumno.alumno}}</span></td>
+            <td><span>{{alumno.legajo}}</span></td>
+            <td><span>{{alumno.fechaNacimiento}}</span></td>
+            <td><span>{{getPromedio(alumno)}}</span></td>
+            <td style="text-align: center;"><a [href]="'/detalle/'+getId(alumno)">VER DETALLE</a></td>
+        </tr>
+    </table>
+</div>

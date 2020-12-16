@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline my-2 my-lg-0">
+          <label style="color: white; margin-right: 10px;">Legajo: </label>
+        <input class="form-control mr-sm-2" type="text" [(ngModel)]="legajo" name="leg">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="buscar('legajo')">Search</button>
+      </form>
+      <form class="form-inline my-2 my-lg-0">
+        <label style="color: white; margin-right: 10px; margin-left: 10px;">Nombre: </label>
+        <input class="form-control mr-sm-2" type="text" [(ngModel)]="nombre" name="nom">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="buscar('nombre')">Search</button>
+      </form>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" style="margin-left: 30px;" [href]="'/detalle/'+idMejor">MEJOR ALUMNO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3"><img src="assets/img/{{alumno.foto}}" alt=""></div>
+        <div class="col-6">
+            <span style="color: green; font-size: 50px; margin-top: 50px;">{{alumno.alumno}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">Legajo:</div>
+        <div class="col-3">{{alumno.legajo}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Carrera:</div>
+        <div class="col-3">{{alumno.carrera}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Esta Activo:</div>
+        <div class="col-3" *ngIf="alumno.estaActivo===true">Si</div>
+        <div class="col-3" *ngIf="alumno.estaActivo===false">No</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Fecha de Nacimiento:</div>
+        <div class="col-3">{{alumno.fechaNacimiento}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Notas</div>
+        <div class="col-3">
+            <li *ngFor="let nota of alumno.notas">{{nota}}</li>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">Promedio</div>
+        <div class="col-3">{{promedio}}</div>
+    </div>
+</div>
