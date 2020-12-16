@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3"><span><b>Provincia: </b></span></div>
+        <div class="col-3">{{provincia.provincia}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>Abreviatura: </b></span></div>
+        <div class="col-3">{{provincia.abreviatura}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>Capital: </b></span></div>
+        <div class="col-3">{{provincia.capital}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>Bandera: </b></span></div>
+        <div class="col-3"><img src="assets/img/{{provincia.bandera}}" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>Fecha Autonomía: </b></span></div>
+        <div class="col-3">{{provincia.fechaAutonomia}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>Población: </b></span></div>
+        <div class="col-3">{{provincia.poblacion}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>Superficie: </b></span></div>
+        <div class="col-3">{{provincia.superficie}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>N° Departamentos: </b></span></div>
+        <div class="col-3">{{provincia.nroDepartamentos}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3"><span><b>Tiene Puerto: </b></span></div>
+        <div class="col-3" *ngIf="provincia.tienePuerto==='Y'">Si</div>
+        <div class="col-3" *ngIf="provincia.tienePuerto==='N'">No</div>
+    </div>
+    <a href="/home">VOLVER</a>
+</div>
